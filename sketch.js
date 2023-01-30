@@ -63,6 +63,6 @@ function draw() {
   textFont("'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace")
 
   fill(255, 100, 50)
-  text("Click to read on iOS", windowWidth /2, windowHeight /2)
+  text("Click and tilt on iOS", 10, 20)
 
 }
