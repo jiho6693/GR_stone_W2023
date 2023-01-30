@@ -22,6 +22,7 @@ if (typeof DeviceMotionEvent.requestPermission === 'function') {
       .catch(function(error) {
         console.warn('DeviceMotionEvent not enabled', error);
       })
+  
   })
 } else {
   // we are not on ios13 and above
@@ -47,13 +48,13 @@ function draw() {
   // even though default mode is radians the Z rotation returns degrees unless converted
 
   // the below code ensures a smooth transition from 0-180 and back
-  let zMotion = round(width * abs(radians(rotationZ) - PI))
+  let zMotion = round(width  * abs(radians(rotationZ) - PI))
   // x and y values moved from the centre point
   let yMotion = round(0 + rotationX * 10)
   let xMotion = round(0 + rotationY * 10)
 
   // motion affected circle
-  image(img, xMotion, yMotion, zMotion)
+  image(img, xMotion, yMotion, windowHeight)
 
  
   // text to provide instructions and
