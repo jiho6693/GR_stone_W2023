@@ -48,7 +48,6 @@ function draw() {
   // even though default mode is radians the Z rotation returns degrees unless converted
 
   // the below code ensures a smooth transition from 0-180 and back
-  let zMotion = round(width  * abs(radians(rotationZ) - PI))
   // x and y values moved from the centre point
   let yMotion = round(0 + rotationX * 10)
   let xMotion = round(0 + rotationY * 10)
