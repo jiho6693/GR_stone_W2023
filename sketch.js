@@ -62,7 +62,6 @@ function draw() {
   textSize(width / 20)
   textFont("'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace")
 
-  fill(255, 100, 50)
-  text("Click and tilt on iOS", 10, 50)
+  
 
 }
